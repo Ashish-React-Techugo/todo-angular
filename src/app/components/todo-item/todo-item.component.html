@@ -1,0 +1,7 @@
+<div>
+    <h3>{{todo?.title}}</h3>
+    <p>{{todo?.desc}}</p>
+    <h4>{{todo?.active ? "Active" : "Inactive"}}</h4>
+    <button  (click)="sendTodo(todo)" class="btn btn-sm btn-success">{{todo?.active ? "Deactivate" : "Activate"}}</button>
+    <button class="btn btn-sm btn-danger" (click)="onClick(todo)">Delete</button>
+</div>
